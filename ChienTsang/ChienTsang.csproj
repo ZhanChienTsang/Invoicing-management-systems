@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{74AFE1D5-2E1D-4D05-87FC-2494C30DBD44}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ChienTsang</RootNamespace>
+    <AssemblyName>ChienTsang</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class_GetData.cs" />
+    <Compile Include="DgvSet.cs" />
+    <Compile Include="PurOrd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PurOrd.designer.cs">
+      <DependentUpon>PurOrd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFg.Designer.cs">
+      <DependentUpon>FormFg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory.Designer.cs">
+      <DependentUpon>Inventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="test_use.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="test_use.Designer.cs">
+      <DependentUpon>test_use.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShopCart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShopCart.Designer.cs">
+      <DependentUpon>ShopCart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer.Designer.cs">
+      <DependentUpon>Customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Product.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Product.Designer.cs">
+      <DependentUpon>Product.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="購物車3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="購物車3.Designer.cs">
+      <DependentUpon>購物車3.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="PurOrd.resx">
+      <DependentUpon>PurOrd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFg.resx">
+      <DependentUpon>FormFg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory.resx">
+      <DependentUpon>Inventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="test_use.resx">
+      <DependentUpon>test_use.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShopCart.resx">
+      <DependentUpon>ShopCart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer.resx">
+      <DependentUpon>Customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Product.resx">
+      <DependentUpon>Product.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="購物車3.resx">
+      <DependentUpon>購物車3.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button-Previous.48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button-First.48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button-Last.48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button-Next.48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search-CONO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search-user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\white.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\white1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\white2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tower.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fj.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Aha-Soft-Large-Business-Cash-register.48.png" />
+    <None Include="Button Pictures\add-96.png" />
+    <None Include="Button Pictures\delete-96.png" />
+    <None Include="Button Pictures\eraser-96.png" />
+    <None Include="Button Pictures\search-96.png" />
+    <None Include="Button Pictures\update-96.png" />
+    <None Include="Button Pictures\add-64.png" />
+    <None Include="Button Pictures\delete-64.png" />
+    <None Include="Button Pictures\eraser-64.png" />
+    <None Include="Button Pictures\search-64.png" />
+    <None Include="Button Pictures\update-64.png" />
+    <None Include="Button Pictures\addshop-48.png" />
+    <None Include="Button Pictures\deleteshop-48.png" />
+    <None Include="Button Pictures\Payshop-48.png" />
+    <None Include="Button Pictures\Receiptshop-48.png" />
+    <None Include="Button Pictures\searchshop-48.png" />
+    <None Include="Button Pictures\go out-48.png" />
+    <None Include="Button Pictures\Print-48.png" />
+    <None Include="Button Pictures\OpenFile-48.png" />
+    <None Include="Button Pictures\CloseFile-48.png" />
+    <None Include="Button Pictures\add-48.png" />
+    <None Include="Button Pictures\delete-48.png" />
+    <None Include="Button Pictures\update-48.png" />
+    <None Include="Button Pictures\correct-48.png" />
+    <None Include="Button Pictures\cancel-48.png" />
+    <Content Include="Resources\delete.ico" />
+    <None Include="Resources\Graphicloads-Colorful-Long-Shadow-Cart-remove.48.png" />
+    <Content Include="Resources\money.ico" />
+    <Content Include="Resources\remove shop.ico" />
+    <Content Include="Resources\SHOPCART.png" />
+    <Content Include="Resources\SHOPCART1.png" />
+    <None Include="Resources\SHOPCART2.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
