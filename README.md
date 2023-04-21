@@ -2,6 +2,8 @@
 
 Invoicing-management-systems
 
+●Use C# and connect to SSMS.
+
 ●Main menu shows forms including Client,Product, Purchase & Order,Shopcart, Inventory.
 
 ●Client,Product, Purchase & Order,Shopcart, Inventory have basic CRUD function by input data in textboxes.
